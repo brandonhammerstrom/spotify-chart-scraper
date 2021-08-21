@@ -1,0 +1,18 @@
+# ignore everything
+*
+
+# except untracked subdirectories
+!**/
+
+# except .py files in sub directories
+!**/*.py
+
+# except .gitignore
+!.gitignore
+
+# except README
+!README.md
+
+# except requirements file
+!requirements.txt
+
