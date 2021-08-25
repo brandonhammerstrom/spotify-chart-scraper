@@ -93,7 +93,7 @@ def html_parser(html, country, chart, chart_date):
                 df["chart_date"] = thursday_date
             elif day_number < thursday:
                 week_delta = datetime.timedelta(days=thursday - day_number)
-                thursday_date = current_date + week_delta
+                thursday_date = (current_date + week_delta) - datetime.timedelta(days=7)
                 df["chart_date"] = thursday_date
             elif day_number == thursday:
                 df["chart_date"] = current_date
